@@ -991,7 +991,7 @@ Transform:
   m_GameObject: {fileID: 171410}
   m_LocalRotation: {x: -.707106888, y: 0, z: -0, w: .707106769}
   m_LocalPosition: {x: 0, y: .0100000007, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 471472}
   - {fileID: 471380}
@@ -1488,6 +1488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 1
+  agent: {fileID: 0}
 --- !u!135 &13571380
 SphereCollider:
   m_ObjectHideFlags: 1

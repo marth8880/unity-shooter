@@ -91,7 +91,9 @@ public class ZombieController : MonoBehaviour
             if( distance <= attackRange )
             {
                 state = State.Attack;
+                animator.SetBool( "bTargetSpotted", false );
                 animator.SetTrigger( "tAttack" );
+                agent.Stop();
             }
             else
             {
@@ -108,6 +110,7 @@ public class ZombieController : MonoBehaviour
         if( info.IsName( "Main.Idle" ) )
         {
             state = State.Idle;
+
         }
     }
 
