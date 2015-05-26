@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Pistol : Weapon
 {
+    public Transform muzzleTransform;
     public override void Fire()
     {
+        Transform cameraTransform = Camera.main.transform;
+        Ray ray = new Ray( cameraTransform.position, cameraTransform.forward );
 
         RaycastHit hitInfo = new RaycastHit();
         if( Physics.Raycast( ray, out hitInfo, range ) )

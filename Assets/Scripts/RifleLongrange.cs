@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RifleLongrange : MonoBehaviour
+public class RifleLongrange : Weapon
 {
     public Transform muzzleTransform;
     public override void Fire()
