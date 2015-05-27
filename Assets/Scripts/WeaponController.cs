@@ -5,9 +5,7 @@ public class WeaponController : MonoBehaviour
 {
     Weapon currentWeapon;
     int currentWeaponInt = 1;
-
-
-
+    
 	// Use this for initialization
 	void Start ()
     {
@@ -30,6 +28,21 @@ public class WeaponController : MonoBehaviour
                 {
                     currentWeaponInt = 1;
                 }
+            }
+            if( Input.GetKeyDown( "2" ) )
+            {
+                if( currentWeaponInt == 2 )
+                {
+                    currentWeaponInt = 1;
+                }
+                else
+                {
+                    currentWeaponInt = 2;
+                }
+            }
+            if ( currentWeaponInt == 1 )
+            {
+
             }
             if( Input.GetMouseButtonDown( 0 ) )
             {
